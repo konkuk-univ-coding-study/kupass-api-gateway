@@ -22,12 +22,12 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedMethods: "*"
-            allowedHeaders: "*"
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods: "*"
+#            allowedHeaders: "*"
 #            allowCredentials: true
       discovery:
         locator:
