@@ -29,11 +29,11 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Make application.yaml
-        run: |
-          mkdir -p ./src/main/resources
-          touch ./src/main/resources/application.yaml
-          echo "${{ secrets.APPLICATION }}" > ./src/main/resources/application.yaml
+#      - name: Make application.yaml
+#        run: |
+#          mkdir -p ./src/main/resources
+#          touch ./src/main/resources/application.yaml
+#          echo "${{ secrets.APPLICATION }}" > ./src/main/resources/application.yaml
 
       - name: Gradle Caching
         uses: actions/cache@v3
